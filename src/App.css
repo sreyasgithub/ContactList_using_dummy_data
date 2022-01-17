@@ -1,0 +1,140 @@
+:root {
+  --cream: rgb(245, 228, 210);
+  --light_brown: #a37b73ff;
+  --dark_brown: #3e282bff;
+  --white: #fff;
+}
+h4,
+h6,
+p {
+  margin: 0;
+  padding: 5px 0px;
+}
+.App {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.header {
+  background-color: var(--light_brown);
+  padding: 30px 30px;
+}
+.header h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+
+/* edit-contact*/
+.edit_contact_container {
+  margin: 0px 0px 20px;
+  background-color: var(--cream);
+  padding: 30px;
+}
+.filled_input_root {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.MuiInput-underline::before,
+.MuiInput-underline::after {
+  border: none !important;
+  outline: none !important;
+}
+.custom_input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--white) !important;
+  padding: 0px 10px !important;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.input_icon {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 2px solid var(--light_brown);
+  color: var(--light_brown);
+}
+.MuiInputBase-root {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--white) !important;
+  padding: 15px 20px 12px !important;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.error {
+  color: maroon;
+  padding-top: 20px !important;
+}
+
+/*contact card*/
+a .btn:hover {
+  border: none !important;
+  outline: none !important;
+}
+.contact_card {
+  border-bottom: 2px dashed var(--light_brown);
+  padding: 20px 10px;
+}
+.action_icon_wrapper {
+  box-shadow: 0px 0px 2px 2px var(--light_brown);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.action_icon_wrapper:first-child {
+  margin: 0px 20px;
+}
+.action_icon_wrapper:nth-child(1) {
+  color: rgb(247, 236, 93);
+}
+.action_icon_wrapper:nth-child(2) {
+  color: rgb(247, 168, 144);
+}
+.contact_img {
+  width: 100px;
+  background: var(--dark_brown);
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.contact_category_wrapper {
+  display: flex;
+  align-items: center;
+}
+.contact_category_wrapper div {
+  padding: 2px 5px 0px 0px;
+}
+
+/*contacts */
+.add_contact_header {
+  background: var(--cream);
+  padding: 10px 20px;
+}
+.custom_btn,
+.custom_btn:hover {
+  padding: 6px 8px;
+  box-shadow: 0px 0px 2px 2px var(--white);
+  border-radius: 5px;
+  background: none !important;
+  margin: 10px 0px !important;
+  text-align: start !important;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-transform: capitalize !important;
+  font-weight: bold !important;
+}
+
+.custom_btn p {
+  margin: 0;
+  padding-left: 10px;
+}
