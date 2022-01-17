@@ -12,6 +12,7 @@ const Layout = (props) => {
               <Grid container alignItems="center">
                 <Grid item xs={12} lg={5}>
                   <h4>{props.header}</h4>
+                  <div>{props.categoryDetails}</div>
                 </Grid>
                 <Grid item xs={12} lg={7}>
                   <div>{props.search}</div>

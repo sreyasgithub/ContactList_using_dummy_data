@@ -65,12 +65,12 @@ const ContactCard = (props) => {
               </div>
             </Grid>
             <Grid item container xs={10}>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={8} lg={6}>
                 <h4>
                   {firstName ? firstName : null} {lastName ? lastName : null}
                 </h4>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={12} sm={4} lg={6}>
                 <Box>
                   <Box className="contact_category_wrapper">
                     <div>
@@ -84,12 +84,12 @@ const ContactCard = (props) => {
                   </Box>
                 </Box>
               </Grid>
-              <Grid item lg={12}>
+              <Grid item xs={12} lg={12}>
                 <div>
                   <p>{gender}</p>
                 </div>
               </Grid>
-              <Grid item lg={6}>
+              <Grid item xs={12} lg={6}>
                 <p>
                   <span>email : </span>
                   {email}

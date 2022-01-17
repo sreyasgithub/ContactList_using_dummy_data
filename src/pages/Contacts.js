@@ -19,6 +19,13 @@ const Contacts = () => {
   const male_count = contactsList.filter((item) => {
     return item.gender == "Male";
   }).length;
+
+  const buissness_count = contactsList.filter((item) => {
+    return item.category == "Buissness";
+  }).length;
+  const personal_count = contactsList.filter((item) => {
+    return item.category == "Personal";
+  }).length;
   const onFilterCategory = (e) => {
     const filterContactLists = contactsList.filter((contact) => {
       return contact.category == e.target.value;
@@ -62,6 +69,16 @@ const Contacts = () => {
   return (
     <Layout
       header="contacts"
+      categoryDetails={
+        <div style={{ color: "#fff" }}>
+          <p>
+            Buissness Contacts : <span>{buissness_count}</span>
+          </p>
+          <p>
+            Personal Contacts : <span>{personal_count}</span>
+          </p>
+        </div>
+      }
       search={
         <div>
           <NativeSelect
